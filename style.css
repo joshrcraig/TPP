@@ -248,10 +248,10 @@ input {
 }
 
 
-/*------------------------------Grid Container----------------------------------*/
+/*------------------------------Mobile Layout----------------------------------*/
 .container1 { /*for index.html, tests.html, contact.html*/
   display: grid;
-  grid-template-columns:auto 1fr;
+  grid-template-columns:100%;
   grid-gap:.5em;
   margin:1%;
   grid-template-areas:
