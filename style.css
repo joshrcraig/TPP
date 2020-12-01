@@ -218,9 +218,11 @@ form {
 }
 .div1 {
     grid-area:div1;
+    color:#02075d;
 }
 .div2 {
     grid-area:div2;
+    color:#02075d;s
 }
 .call {
     color:#ffffff;
