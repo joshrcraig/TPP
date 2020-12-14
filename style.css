@@ -1,4 +1,4 @@
-/*For Project 10 - HOME, BLOG, ABOUT, TEST & CONTACT (Project #10)*/
+/*For Project 10 - HOME, BLOG, ABOUT, TESTS, & CONTACT*/
 
 img{
     max-width:100%; /*keep this in case you add pictures*/
@@ -8,7 +8,7 @@ audio {
     max-width:100%; /*Must be set or you'll get a scrollbar*/
 }
 
-video { /*Added this for the DESTINATION page video */
+video { /*Added this for the Tests page video */
     max-width: 100%;
     height:auto;
 }
@@ -38,12 +38,12 @@ header {
     grid-area:headerpic;
     padding:5px;
     height:10vmax; 
-    }
+}
 
 .headertext {
     grid-area:headertext;
     text-align:center;
-    }
+}
     
 .headerwrapper {
     display:grid;
@@ -52,7 +52,7 @@ header {
     grid-template-columns:25% auto;
     grid-template-areas:
     "headerpic headertext"
-    }
+}
 
 header h1 {
      font-size:5vw;
@@ -67,6 +67,7 @@ header h3 {
     color:#ffffff;
     margin:0;
 }
+
 nav {
     grid-area:nav;
     background:#226324;
@@ -92,7 +93,7 @@ main {
     background:#A4C4FE;
     color:#0000B0;
     padding:5px;
-    }
+}
 
 main h2 {
     text-align:center;
@@ -106,7 +107,7 @@ main p {
 }
 
 main a {
- color:navy;   
+    color:navy;   
 }
 
 footer {
@@ -114,26 +115,29 @@ footer {
     background:#400057;
     padding:5px;
     text-align:center;
-    }
+}
 
 footer p {
      font-size:1em;
      color:#ffffff;
      margin:0;
 }
+
 section {
     grid-area:section;
 }
+
 .fig1 {
     grid-area:fig1;
 }
+
 .fig2 {
     grid-area:fig2;
     background:#ffffff;
 }
 
 figure {
-    margin:0;/*This is a glitch that figure must have a zero margin - just do it*/
+    margin:0;/*Figure has margin if you don't specify otherwise*/
     text-align:center;
 }
 
@@ -157,20 +161,16 @@ aside {
 
 aside a {
     color:#0000B0;
-    font-size:20px;
-}
-
-aside a:hover {
-    color:#2819CC;
 }
 
 aside li {
-    color:navy;
+    color:#0000b0;
     padding:10px 0;
+    font-size:1.25em;
 }
 
 aside h2 {
-    color:navy;
+    color:#0000b0;
     text-align:center;
     padding:0 5px;
 }
@@ -213,17 +213,18 @@ form {
     background-color:#FFA500;
     width:90%;
     margin:auto;
-    color:white;
+    color:#02075d;
     padding:10px;
 }
+
 .div1 {
     grid-area:div1;
-    color:#02075d;
 }
+
 .div2 {
     grid-area:div2;
-    color:#02075d;
 }
+
 .call {
     color:#ffffff;
     border-radius:5px;
@@ -249,7 +250,7 @@ input {
 
 
 /*------------------------------Mobile Layout----------------------------------*/
-.container1 { /*for index.html, tests.html, contact.html*/
+.container1 { /*for tests.html, contact.html*/
   display: grid;
   grid-template-columns:100%;
   grid-gap:.5em;
@@ -259,9 +260,9 @@ input {
     "nav"
     "main"
     "footer";
-    }
+}
 
-.container2 { /*for index2.html*/
+.container2 { /*for index.html*/
   display: grid;
   grid-template-columns:100%;
   grid-gap:.5em;
@@ -302,7 +303,6 @@ input {
     "footer";
 }
 
-
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -310,7 +310,7 @@ input {
     font-size:1.5em;
     font-weight:bold;
     padding:10px;
-    }
+}
 
 #flex-nav ul {
     display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
@@ -318,20 +318,20 @@ input {
     list-style: none;
     margin: 0;
     padding: 0;
-    }
+}
  
 #flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
     display:grid;
-    }
+}
     
 #flex-nav li {
     padding-left:10px;
     padding-top:10px;
-    }
+}
 
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
-.container1 { /*for index.html, tests.html, contact.html*/
+.container1 { /*for tests.html, contact.html*/
   display: grid;
   grid-template-columns:auto 1fr;
   grid-gap:.5em;
@@ -342,7 +342,7 @@ input {
     "footer footer";
     }
     
-.container2 { /*for index2.html*/
+.container2 { /*for index.html*/
   display: grid;
   grid-template-columns:auto 1fr;
   grid-gap:.5em;
@@ -378,14 +378,14 @@ input {
     "nav main"
     "fig2 fig2"
     "footer footer";
-}
+    }
     
 .nestedgrid { /*This is for the nested grid to allow section and fig1 to stack on about.html*/
     display:grid;
     grid-template-areas:
     "section"
     "fig1";
-}
+    }
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -406,7 +406,7 @@ input {
 
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
-.container1 { /*for index.html, tests.html, contact.html*/
+.container1 { /*for tests.html, contact.html*/
   display: grid;
   grid-template-columns:auto 1fr;
   grid-gap:.5em;
@@ -417,7 +417,7 @@ input {
     "footer footer";
     }
     
-.container2 { /*for index2.html*/
+.container2 { /*for index.html*/
   display: grid;
   grid-template-columns:auto 1fr 25%;
   grid-gap:.5em;
@@ -464,5 +464,5 @@ input {
     grid-template-columns:1fr 1fr;
     grid-template-areas:
     "div1 div2";
-}
+    }
 }
