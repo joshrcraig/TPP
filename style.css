@@ -37,7 +37,7 @@ header {
 .headerpic {
     grid-area:headerpic;
     padding:5px;
-    height:10vmax; 
+    height:10vmax;
 }
 
 .headertext {
@@ -57,7 +57,6 @@ header {
 header h1 {
      font-size:5vw;
      color:#ffffff;
-     font-family:Impact;
      text-shadow: 2px 2px 5px #3217ff;
      margin: 0;
 }
@@ -107,7 +106,7 @@ main p {
 }
 
 main a {
-    color:navy;   
+    color:navy;
 }
 
 footer {
@@ -203,6 +202,11 @@ article p {
     grid-area:bottom;
 }
 
+.studypic {
+  display:grid;
+  margin:auto;
+}
+
 .video, .audio {
     margin:0;
     display:grid;  /*This needs to be set or it won't center*/
@@ -288,7 +292,7 @@ input {
     "middle"
     "bottom"
     "footer";
-} 
+}
     
 .container4 { /*for about.html*/
   display: grid;
@@ -366,7 +370,7 @@ input {
     "middle middle"
     "bottom bottom"
     "footer footer";
-}    
+}
     
 .container4 { /*for about.html*/
   display: grid;
